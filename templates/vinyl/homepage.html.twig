@@ -1,0 +1,15 @@
+{% extends 'base.html.twig'%}
+{% block body %}
+<h1>{{ title }}</h1>
+<div>
+    Our schweet track list : TODO
+</div>
+<div>
+    the track list is :
+    <ul>
+        {% for track in tracks    %}
+            <li>The track name : {{ track.song }},the track artist : {{ track.artist|upper}} </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
